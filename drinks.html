@@ -23,6 +23,7 @@
     ></script>
   </head>
   <body>
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-md bg-light">
       <a class="navbar-brand" href="drinks.html">A Few Drinks</a>
       <button
@@ -195,5 +196,32 @@
         <li><a class="dropdown-item" href="advanced.html">Advanced</a></li>
       </ul>
     </div>
+
+    <!-- FORM -->
+    <form>
+      <div class="mb-3">
+        <label for="emailInput" class="form-label">Email address</label>
+        <input
+          type="email"
+          class="form-control"
+          id="emailInput"
+          aria-describedby="emailHelp"
+        />
+        <div id="emailHelp" class="form-text">
+          We'll never share your email with anyone else.
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="drinkInput" class="form-label">Enter your drink</label>
+        <input type="text" class="form-control" id="drinkInput" />
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="newsletter" />
+        <label class="form-check-label" for="newsletter"
+          >Sign up for newsletter?</label
+        >
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
   </body>
 </html>
